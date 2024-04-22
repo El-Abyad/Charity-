@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/Normaliz.css" />
+    <link
+      rel="icon"
+      href="img/c670e5316c0946b39ad8516478b82a44 (1) 2logo.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Charity</title>
+  </head>
+  <body>
+    <!-- start project -->
+    <!-- intro -->
+    <div class="intro h-screen w-screen bg-slate-600 flex justify-center items-center text-orange-400 duration-300 fixed z-50">
+      <div class="flex justify-center items-center">
+        <img class="w-20" src="img/c670e5316c0946b39ad8516478b82a44 (1) 2logo.svg" alt="" />
+        <p class="ml-3 text-4xl uppercase font-bold" id="text">S</p>
+        <div class="loader ml-7">
+          <span class="loader-text">loading</span>
+            <span class="load"></span>
+        </div>
+      
+      </div>
+    </div>
+    <!--End intro -->
+    <div class="charity-all pt-3">
+      <div class="px-16">
+        <!-- start Header -->
+        <header class="flex justify-between items-center">
+          <div class="logo flex justify-center items-center cursor-pointer">
+            <img
+              src="img/c670e5316c0946b39ad8516478b82a44 (1) 2logo.svg"
+              alt=""
+            />
+            <p class="ml-3 text-4xl uppercase font-bold">Smile</p>
+          </div>
+          <div class="hidden lg:flex justify-end items-center">
+            <ul class="flex justify-between">
+              <li class="pr-8 capitalize">
+                <a class="active font-semibold" href="#Home">Home</a>
+              </li>
+              <li class="pr-8 capitalize">
+                <a class="font-semibold" href="#AboutUs">About Us</a>
+              </li>
+              <li class="pr-8 capitalize">
+                <a class="font-semibold" href="#blog">blog</a>
+              </li>
+              <li class="pr-8 capitalize">
+                <a class="font-semibold" href="#campaigns">campaigns</a>
+              </li>
+              <li class="pr-8 capitalize">
+                <a class="font-semibold" href="#connectUs">connect Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="lg:hidden">
+            <!-- أيقونة القائمة -->
+            <button id="menu-toggle" class="block text-black">
+              <svg class="h-10 w-10 fill-current" viewBox="0 0 24 24">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"
+                />
+              </svg>
+            </button>
+            <!-- القائمة المنسدلة -->
+            <ul id="menu" class="hidden menub absolute p-3 z-50 bg-slate-200">
+              <li class="mb-1 capitalize">
+                <a class="active font-semibold" href="#Home">Home</a>
+              </li>
+              <li class="mb-1 capitalize">
+                <a class="font-semibold" href="#AboutUs">About Us</a>
+              </li>
+              <li class="mb-1 capitalize">
+                <a class="font-semibold" href="#blog">blog</a>
+              </li>
+              <li class="mb-1 capitalize">
+                <a class="font-semibold" href="#campaigns">campaigns</a>
+              </li>
+              <li class="capitalize">
+                <a class="font-semibold" href="#connectUs">connect Us</a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <!-- End Header -->
+        <!-- start one page -->
+        <div class="one-page pt-20 relative">
+          <div class="flex justify-evenly max-[560px]:flex-col">
+            <p class="w-96 font-medium text-2xl max-[968px]:hidden">
+              Inventore ratione tenetur sit in quos unde ex sunt dolores.
+              Aspernatur minus sed harum ut eos et at omnis. Laborum non nihil
+              rerum aliquam sint assumenda.
+            </p>
+            <h3 class="">
+              The Cute Smile <br />
+              <span>Charity</span>
+            </h3>
+            <p class="absolute share max-[800px]:hidden">
+              <img
+                src="img/image-from-rawpixel-id-6115662-svg 1share.svg"
+                alt=""
+              />
+            </p>
+            <p class="w-32 rotate-12 max-[800px]:hidden">
+              <img src="img/Group 1circle.svg" alt="" />
+            </p>
+            <div
+              class="icon flex min-[560px]:flex-col max-[560px]:justify-evenly max-[560px]:mt-8 cursor-pointer"
+            >
+              <i class="fa-brands fa-instagram instagram text-2xl mb-4"></i>
+              <i class="fa-brands fa-whatsapp text-2xl text-gray-400 mb-4"></i>
+              <i class="fa-brands fa-facebook-f text-2xl text-gray-400"></i>
+            </div>
+          </div>
+          <div class="absolute hand">
+            <img src="img/begging-g424494793_1280 2hand.png" alt="" />
+          </div>
+        </div>
+        <!-- End one page -->
+        <!-- start two page -->
+        <div class="two-page relative pb-14" >
+          <div
+            class="flex justify-evenly max-[968px]:flex-col-reverse items-center"
+          >
+            <div class="mr-24 tagline">
+              <img src="img/Group 3178two page.png" alt="" />
+              <!-- <img class="" src="img/Group 3175two page one.png" alt="" />
+                <img class="absolute two-img z-10 top-3" src="img/Group 3174two page two.png" alt="" /> -->
+            </div>
+            <div
+              class="w-72 about min-[560px]:scale-150 lg:pt-44 max-[968px]:mb-28"
+            >
+              <span class="font-medium relative capitalize">About us</span>
+              <h3 class="text-3xl font-bold py-3">
+                Your Support is Really Powerful.​
+              </h3>
+              <p class="font-medium">
+                Voluptatem necessitatibus et id quia eos. Sequi accusantium
+                repellendus. Voluptas sit natus. Est in aut nostrum in dolor.
+                Inventore eius qui est sunt et exercitationem neque placeat aut.
+                Architecto debitis cupiditate.
+              </p>
+              <a class="block read mt-5 w-fit p-2" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+        <!-- End two page -->
+        <!-- start three page -->
+        <div class="three-page">
+          <div class="flex max-[968px]:flex-col max-[968px]:items-center">
+            <div class="text basis-1/2 mt-16 pb-32 max-[968px]:w-min">
+              <span class="font-bold welecome text-xl relative capitalize"
+                >Welcome to Charity</span
+              >
+              <h3 class="text-3xl w-1/2 font-bold py-3">
+                Let Us Come Together To Make a Difference
+              </h3>
+              <p class="min-[560px]:w-3/4 font-medium">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy tempor invidunt ut labore et dolore magna aliquyam
+                erat, sed diam voluptua. At vero eos et accusam et justo.
+              </p>
+              <div class="boxes flex gap-12 mt-4">
+                <div class="box rounded-lg p-3">
+                  <p class="mb-2">
+                    <i class="fa-regular fa-circle-check text-2xl mr-2"></i>Our
+                    mission
+                  </p>
+                  <span class="text-gray-600"
+                    >Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    sed diam</span
+                  >
+                </div>
+                <div class="box rounded-lg p-3">
+                  <p class="mb-2">
+                    <i class="fa-solid fa-sheet-plastic text-2xl mr-2"></i>Our
+                    vission
+                  </p>
+                  <span class="text-gray-600"
+                    >Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    sed diam</span
+                  >
+                </div>
+              </div>
+              <div class="w-1/2 mt-5 two relative">
+                <div class="donations flex justify-between mb-8">
+                  <p>Donations</p>
+                  <p>75%</p>
+                </div>
+                <div class="Medical flex justify-between">
+                  <p>Medical Help</p>
+                  <p>90%</p>
+                </div>
+              </div>
+            </div>
+            <div class="image page">
+              <img src="img/feature post imagethree.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- End three page -->
+        <!-- start four page -->
+        <div class="four-page pb-12">
+          <p class="font-medium first mb-2 relative">About</p>
+          <h3 class="font-bold first text-2xl mb-10">Our Features</h3>
+          <div
+            class="boxes gap-10 grid grid-cols-3 max-[1280px]:grid-cols-2 max-[868px]:grid-cols-1 justify-items-center"
+          >
+            <div
+              class="box hover:scale-110 duration-300 p-4 pb-10 w-96 shadow-lg"
+            >
+              <i
+                class="fa-solid fa-house my-2 rounded-full text-3xl bg-white p-5"
+              ></i>
+              <h5 class="text-xl py-3 font-bold">Food & Homeless charity</h5>
+              <p class="mb-3">
+                Lorem ipsum dolor sit amet, consetetur sadipscing sed diam
+                nonumy tempor invidunt ut labore et magna aliquyam erat, sed
+                diam voluptua.....
+              </p>
+              <ul class="font-bold">
+                <li class="mb-3">
+                  1. Join your hand with us for a better life
+                </li>
+                <li>2. Let's do the right thing now</li>
+              </ul>
+            </div>
+            <div
+              class="box hover:scale-110 duration-300 p-4 pb-10 w-96 shadow-lg"
+            >
+              <i
+                class="fa-solid fa-hand-holding-dollar my-2 rounded-full text-3xl bg-white p-5"
+              ></i>
+              <h5 class="text-xl py-3 font-bold">Make a donation</h5>
+              <p class="mb-3">
+                Lorem ipsum dolor sit amet, consetetur sadipscing sed diam
+                nonumy tempor invidunt ut labore et magna aliquyam erat, sed
+                diam voluptua.....
+              </p>
+              <ul class="font-bold mt-5">
+                <li class="mb-3">1. Lorem ipsum dolor sit amet</li>
+                <li class="mb-3">2. Lorem ipsum dolor sit amet</li>
+                <li class="mb-3">3. Lorem ipsum dolor sit amet</li>
+              </ul>
+            </div>
+            <div
+              class="box hover:scale-110 duration-300 p-4 pb-10 w-96 shadow-lg"
+            >
+              <i
+                class="fa-regular fa-handshake my-2 rounded-full text-3xl bg-white p-5"
+              ></i>
+              <h5 class="text-xl py-3 font-bold">Food & Homeless charity</h5>
+              <p class="mb-3">
+                Lorem ipsum dolor sit amet, consetetur sadipscing sed diam
+                nonumy tempor invidunt ut labore et magna aliquyam erat, sed
+                diam voluptua.....
+              </p>
+              <ul class="font-bold mt-5">
+                <li class="mb-3">1. Ex quam minus cum est at nihil.</li>
+                <li class="mb-3">2. Let's do the right thing now</li>
+                <li class="mb-3">3. Let's do the right thing now</li>
+                <li>4. Let's do the right thing now</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End four page -->
+        <!-- start five page -->
+        <div
+          class="five-page justify-items-center grid grid-cols-4 max-[1280px]:grid-cols-2 max-[627px]:grid-cols-1 pt-16 gap-5"
+        >
+          <div class="box py-8 w-72 text-center flex flex-col relative">
+            <p class="relative z-30">
+              <i class="fa-solid fa-handshake py-14 block text-4xl"></i>
+            </p>
+            <div class="progress-bar">
+              <progress
+                value="75"
+                min="0"
+                max="100"
+                style="visibility: hidden; height: 0; width: 0"
+              >
+                75%
+              </progress>
+            </div>
+            <span class="text-4xl font-extrabold mb-5">4597+</span>
+            <p class="font-medium">People rised</p>
+          </div>
+          <div class="box py-8 w-72 text-center flex flex-col relative">
+            <p class="relative z-30">
+              <i class="fa-solid fa-people-arrows py-14 block text-4xl"></i>
+            </p>
+            <div class="progress-bar Volunteer">
+              <progress
+                value="75"
+                min="0"
+                max="100"
+                style="visibility: hidden; height: 0; width: 0"
+              >
+                75%
+              </progress>
+            </div>
+            <span class="text-4xl font-extrabold mb-5">8945+</span>
+            <p class="font-medium">Volunteer</p>
+          </div>
+          <div class="box py-8 w-72 text-center flex flex-col relative">
+            <p class="relative z-30">
+              <i class="fa-brands fa-twitter py-14 block text-4xl"></i>
+            </p>
+            <div class="progress-bar twitter">
+              <progress
+                value="75"
+                min="0"
+                max="100"
+                style="visibility: hidden; height: 0; width: 0"
+              >
+                75%
+              </progress>
+            </div>
+            <span class="text-4xl font-extrabold mb-5">10M+</span>
+            <p class="font-medium">People rised</p>
+          </div>
+          <div class="box py-8 w-72 text-center flex flex-col relative">
+            <p class="relative z-30">
+              <i class="fa-solid fa-earth-americas py-14 block text-4xl"></i>
+            </p>
+            <div class="progress-bar">
+              <progress
+                value="75"
+                min="0"
+                max="100"
+                style="visibility: hidden; height: 0; width: 0"
+              >
+                75%
+              </progress>
+            </div>
+            <span class="text-4xl font-extrabold mb-5">100+</span>
+            <p class="font-medium">Country Member</p>
+          </div>
+        </div>
+        <!-- End five page -->
+        <!-- start sex page -->
+        <div class="sex-page">
+          <h3 class="pt-16 here-sex text-3xl font-bold">Our Gallery</h3>
+          <div
+            class="grid image-one justify-items-center grid-cols-3 gap-8 pt-8 max-[968px]:grid-cols-2 max-[560px]:grid-cols-1"
+          >
+            <img class="" src="img/unsplash_0f3bZHXZSz86 one.svg" alt="" />
+            <img class="" src="img/unsplash_jQhgDnovqhw6 two.svg" alt="" />
+            <img class="" src="img/unsplash_cVEOh_JJmEE6 three.svg" alt="" />
+          </div>
+          <div
+            class="grid image-two justify-items-center grid-cols-4 gap-8 pt-8 max-[968px]:grid-cols-2"
+          >
+            <img src="img/unsplash_nr5xEjOtiMA6 two 1.jpg" alt="" />
+            <img src="img/unsplash_9322BcAazXM6 two 2.jpg" alt="" />
+            <img src="img/unsplash_zf9_yiAekJs6 two 3.jpg" alt="" />
+            <img src="img/unsplash_PAiVzSmYy-c6 two 4.jpg" alt="" />
+          </div>
+        </div>
+        <!-- End sex page -->
+        <!-- start company logo -->
+        <div
+          class="company-logo pt-16 justify-items-center grid max-[560px]:grid-cols-1 grid-cols-4 max-[968px]:grid-cols-2"
+        >
+          <img
+            class="company-one max-[560px]:mb-3"
+            src="img/3logo one.svg"
+            alt=""
+          />
+          <img
+            class="company-two max-[560px]:mb-3"
+            src="img/1logo two.svg"
+            alt=""
+          />
+          <img
+            class="company-three max-[560px]:mb-3"
+            src="img/2logo three.svg"
+            alt=""
+          />
+          <img
+            class="company-four max-[560px]:mb-3"
+            src="img/4logo four.svg"
+            alt=""
+          />
+        </div>
+        <!-- End company logo -->
+        <!-- start Connect Us -->
+        <div class="Connect-us pt-20 flex justify-evenly max-[868px]:flex-col">
+          <div class="basis-1/2 max-[868px]:mx-auto max-[868px]:mb-6">
+            <img src="img/panaphone.png" alt="" />
+          </div>
+          <div class="basis-1/3">
+            <label class="flex flex-col">
+              <input
+                class="border-b pr-16 p-3 focus:outline-none mb-5 border-gray-500"
+                type="text"
+                placeholder="Your Name"
+              />
+              <input
+                class="border-b pr-16 p-3 focus:outline-none mb-5 border-gray-500"
+                type="email"
+                placeholder="Your Email"
+              />
+              <textarea
+                name=""
+                placeholder="Enter A message"
+                id=""
+                class="resize-none border p-2 pr-16 w-full h-36 rounded-md focus:outline-none mb-5 border-gray-500"
+              ></textarea>
+            </label>
+            <a href="#" class="bg-orange-500 py-2 px-8 rounded-lg text-white"
+              >send</a
+            >
+          </div>
+        </div>
+        <!-- End Connect Us -->
+        <!-- End container -->
+      </div>
+      <!-- start footer -->
+      <footer class="mt-20 p-8">
+        <div
+          class="flex justify-evenly max-[868px]:flex-col-reverse items-center"
+        >
+          <div class="cursor-pointer max-[868px]:my-10 first">
+            <div class="flex justify-center items-center">
+              <img class="w-20" src="img/logo2 1logo footer.svg" alt="" />
+              <p class="ml-3 text-4xl uppercase font-bold">Smile</p>
+            </div>
+            <div class="icon mt-5">
+              <i
+                class="fa-brands fa-instagram text-2xl ml-5 py-1 px-2 rounded-full"
+              ></i>
+              <i
+                class="fa-brands fa-whatsapp whatsapp text-2xl ml-5 py-1 px-2 rounded-full"
+              ></i>
+              <i
+                class="fa-brands fa-facebook-f text-2xl ml-5 py-1 px-2 rounded-full"
+              ></i>
+            </div>
+          </div>
+          <div
+            class="text-slate-200 flex-wrap max-[868px]:order-first max-[868px]:flex max-[868px]:justify-evenly max-[868px]:w-full"
+          >
+            <p
+              class="mb-6 max-[868px]:text-orange-300 max-[868px]:border-r-2 max-[868px]:pr-5 max-[868px]:border-white cursor-pointer hover:pl-8 duration-300"
+            >
+              Home
+            </p>
+            <p
+              class="mb-6 max-[868px]:border-r-2 max-[868px]:pr-5 max-[868px]:border-white cursor-pointer hover:pl-8 duration-300"
+            >
+              Projects
+            </p>
+            <p
+              class="mb-6 max-[868px]:border-r-2 max-[868px]:pr-5 max-[868px]:border-white cursor-pointer hover:pl-8 duration-300"
+            >
+              Team
+            </p>
+            <p
+              class="mb-6 max-[868px]:border-r-2 max-[868px]:pr-5 max-[868px]:border-white cursor-pointer hover:pl-8 duration-300"
+            >
+              About
+            </p>
+            <p class="mb-6 cursor-pointer hover:pl-8 duration-300">
+              Get Involved
+            </p>
+          </div>
+          <div>
+            <img src="img/brofooter.svg" alt="" />
+          </div>
+        </div>
+        <!-- <p class="text-white text-start text-2xl"> <span class="text-3xl">&copy;</span> 2023 Lorem ipsum dolor sit amet consectetur </p> -->
+        <div class="flex flex-wrap justify-center pt-10">
+          <span class="font-bold whitespace-nowrap"
+            ><span class="text-yellow-400">&lt;</span
+            ><span class="text-red-400">Developed By</span
+            ><span class="text-yellow-400">&gt;</span
+            ><span class="cursor-pointer"
+              ><a
+                href="https://www.facebook.com/profile.php?id=100011161127152&amp;mibextid=ZbWKwL"
+                target="_blank"
+                class="mx-2 text-yellow-400 px-2 py-2 rounded-md"
+                >Ahmed_Elabyad</a
+              >
+            </span> </span
+          ><span class="font-bold whitespace-nowrap space-x-1"
+            ><span class="text-yellow-400">&lt;</span
+            ><span class="text-red-400">All Copy Rights Reserved @2024</span
+            ><span class="text-yellow-400">&gt;</span></span
+          >
+        </div>
+      </footer>
+      <!-- End footer -->
+    </div>
+    <!-- End project -->
+
+    <script src="js/tailwind.config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+  </body>
+</html>
